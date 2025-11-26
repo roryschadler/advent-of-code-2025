@@ -7,7 +7,18 @@ authors = [
 ]
 readme = "README.md"
 requires-python = ">=3.14"
-dependencies = []
+dependencies = [
+    "beautifulsoup4>=4.14.2",
+    "click>=8.3.1",
+    "httpx>=0.28.1",
+    "mdformat>=1.0.0",
+    "mdformat-gfm>=1.0.0",
+    "mdformat-pyproject>=0.1.1",
+    "mdformat-ruff>=0.1.3",
+]
+
+[project.scripts]
+"aoc" = "advent_of_code_2025.utils.puzzle.cli:aoc"
 
 [build-system]
 requires = ["uv_build>=0.9.11,<0.10.0"]
