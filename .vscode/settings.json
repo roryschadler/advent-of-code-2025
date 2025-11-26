@@ -1,0 +1,6 @@
+{
+  "julia.environmentPath": "${workspaceFolder}",
+  "github.copilot.enable": {
+    "*": false
+  }
+}
