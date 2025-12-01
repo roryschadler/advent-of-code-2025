@@ -1,5 +1,7 @@
-# This file contains utility functions for Advent of Code 2024.
+# This file contains utility functions for Advent of Code 2025.
 module Utils
+
+export readinput, textblocktolines, textblocktomatrix, matrixtotextblock, transposelines
 
 function readinput(path::String = "input.txt", T = String)
     return open(f -> read(f, T), "$(dirname(PROGRAM_FILE))/$path")

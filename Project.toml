@@ -1,4 +1,10 @@
 name = "AdventOfCode2025"
 uuid = "f75e17d3-f987-4e71-a56d-f956b91f4668"
-authors = ["Rory Schadler <48921090+roryschadler@users.noreply.github.com>"]
 version = "0.1.0"
+authors = ["Rory Schadler <48921090+roryschadler@users.noreply.github.com>"]
+
+[deps]
+Utils = "5a498afa-9db5-4669-9dba-79ab0ad7edfc"
+
+[sources]
+Utils = {path = "src/advent_of_code_2025/Utils"}

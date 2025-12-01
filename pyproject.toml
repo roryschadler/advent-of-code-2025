@@ -18,7 +18,7 @@ dependencies = [
 ]
 
 [project.scripts]
-"aoc" = "advent_of_code_2025.utils.puzzle.cli:aoc"
+"aoc" = "advent_of_code_2025.cli.main:aoc"
 
 [build-system]
 requires = ["uv_build>=0.9.11,<0.10.0"]
