@@ -4,14 +4,10 @@ from pathlib import Path
 import click
 from mdformat import text
 
-from advent_of_code_2025.utils.puzzle._utils import (
-    day_argument,
-    puzzle_argument,
-    year_argument,
-)
-from advent_of_code_2025.utils.puzzle.get import get_input, get_soup, get_title
-from advent_of_code_2025.utils.puzzle.parser import parse_file, parse_soup
-from advent_of_code_2025.utils.puzzle.write import write
+from advent_of_code_2025.cli._utils import day_argument, puzzle_argument, year_argument
+from advent_of_code_2025.cli.get import get_input, get_soup, get_title
+from advent_of_code_2025.cli.parser import parse_file, parse_soup
+from advent_of_code_2025.cli.write import write
 
 SESSION_FILE = Path(__file__).parent / "session.txt"
 

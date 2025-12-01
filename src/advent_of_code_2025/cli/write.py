@@ -1,7 +1,7 @@
 import logging
 from pathlib import Path
 
-PACKAGE_ROOT = Path(__file__).parent.parent.parent
+PACKAGE_ROOT = Path(__file__).parent.parent
 
 PUZZLE_TEXT_FILENAME = "README.md"
 PUZZLE_INPUT_FILENAME = "input.txt"
@@ -27,6 +27,7 @@ def write_puzzle(day_directory: Path, text: str, puzzle_number: int):
             )
 
         with path.open("a") as fw:
+            fw.write("\n")
             fw.write(text)
     else:
         raise RuntimeError(f"Invalid puzzle number {puzzle_number}")
@@ -55,4 +56,5 @@ def write(puzzle_text: str, input_text: str, title: str, day: int, puzzle_number
 
     write_puzzle(day_directory, puzzle_text, puzzle_number)
 
-    write_input(day_directory, input_text)
+    if puzzle_number == 1:
+        write_input(day_directory, input_text)
