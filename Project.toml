@@ -4,7 +4,11 @@ version = "0.1.0"
 authors = ["Rory Schadler <48921090+roryschadler@users.noreply.github.com>"]
 
 [deps]
+DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
 Utils = "5a498afa-9db5-4669-9dba-79ab0ad7edfc"
 
 [sources]
-Utils = {path = "src/advent_of_code_2025/Utils"}
+Utils = {path = "src/advent_of_code_2025/utils"}
+
+[compat]
+DataStructures = "0.19.3"
