@@ -4,7 +4,11 @@ version = "0.1.0"
 authors = ["Rory Schadler <48921090+roryschadler@users.noreply.github.com>"]
 
 [deps]
+Memoization = "6fafb56a-5788-4b4e-91ca-c0cea6611c73"
 Utils = "5a498afa-9db5-4669-9dba-79ab0ad7edfc"
 
 [sources]
 Utils = {path = "src/advent_of_code_2025/Utils"}
+
+[compat]
+Memoization = "0.2.2"
