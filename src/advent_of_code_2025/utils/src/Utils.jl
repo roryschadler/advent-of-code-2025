@@ -4,7 +4,8 @@ module Utils
 export readinput, textblocktolines, textblocktomatrix, matrixtotextblock, transposelines
 
 function readinput(path::String = "input.txt", T = String)
-    return open(f -> read(f, T), "$(dirname(PROGRAM_FILE))/$path")
+    dir = length(PROGRAM_FILE) > 0 ? dirname(PROGRAM_FILE) : pwd()
+    return open(f -> read(f, T), "$dir/$path")
 end
 
 function textblocktolines(textblock::AbstractString)::Vector{String}
