@@ -1,11 +1,11 @@
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.12.3"
+julia_version = "1.12.5"
 manifest_format = "2.0"
-project_hash = "8c0d0ca5918d863601d373208389c079671b2a5e"
+project_hash = "1d0d6f67db3dad0c837cc70926eff27c40a79853"
 
 [[deps.AdventOfCode2025]]
-deps = ["Combinatorics", "DataStructures", "Graphs", "LinearAlgebra", "Utils"]
+deps = ["Combinatorics", "DataStructures", "Graphs", "IterTools", "LinearAlgebra", "Utils"]
 path = "."
 uuid = "f75e17d3-f987-4e71-a56d-f956b91f4668"
 version = "0.1.0"
@@ -25,9 +25,9 @@ uuid = "2a0f44e3-6c83-55bd-87e4-b1978d98bd5f"
 version = "1.11.0"
 
 [[deps.Combinatorics]]
-git-tree-sha1 = "8010b6bb3388abe68d95743dcbea77650bb2eddf"
+git-tree-sha1 = "c761b00e7755700f9cdf5b02039939d1359330e1"
 uuid = "861a8166-3701-5b0c-9a16-15d98fcdc6aa"
-version = "1.0.3"
+version = "1.1.0"
 
 [[deps.CompilerSupportLibraries_jll]]
 deps = ["Artifacts", "Libdl"]
@@ -47,9 +47,9 @@ version = "1.11.0"
 
 [[deps.Graphs]]
 deps = ["ArnoldiMethod", "DataStructures", "Inflate", "LinearAlgebra", "Random", "SimpleTraits", "SparseArrays", "Statistics"]
-git-tree-sha1 = "d80e8b7220b884117938b2d219487eea06f9e42e"
+git-tree-sha1 = "031d63d09bd3e6e319df66bb466f5c3e8d147bee"
 uuid = "86223c79-3864-5bf0-83f7-82e725a168b6"
-version = "1.13.2"
+version = "1.13.4"
 
     [deps.Graphs.extensions]
     GraphsSharedArraysExt = "SharedArrays"
@@ -67,6 +67,11 @@ version = "0.1.5"
 deps = ["Markdown"]
 uuid = "b77e0a4c-d291-57a0-90e8-8db25a27a240"
 version = "1.11.0"
+
+[[deps.IterTools]]
+git-tree-sha1 = "42d5f897009e7ff2cf88db414a389e5ed1bdd023"
+uuid = "c8e1da08-722c-5040-9ed9-7db0dc04731e"
+version = "1.10.0"
 
 [[deps.JuliaSyntaxHighlighting]]
 deps = ["StyledStrings"]
@@ -110,9 +115,9 @@ version = "1.3.3"
 
 [[deps.Preferences]]
 deps = ["TOML"]
-git-tree-sha1 = "0f27480397253da18fe2c12a4ba4eb9eb208bf3d"
+git-tree-sha1 = "522f093a29b31a93e34eaea17ba055d850edea28"
 uuid = "21216c6a-2e73-6563-6e65-726566657250"
-version = "1.5.0"
+version = "1.5.1"
 
 [[deps.Printf]]
 deps = ["Unicode"]
@@ -145,9 +150,9 @@ version = "1.12.0"
 
 [[deps.StaticArrays]]
 deps = ["LinearAlgebra", "PrecompileTools", "Random", "StaticArraysCore"]
-git-tree-sha1 = "b8693004b385c842357406e3af647701fe783f98"
+git-tree-sha1 = "eee1b9ad8b29ef0d936e3ec9838c7ec089620308"
 uuid = "90137ffa-7385-5640-81b9-e52037218182"
-version = "1.9.15"
+version = "1.9.16"
 
     [deps.StaticArrays.extensions]
     StaticArraysChainRulesCoreExt = "ChainRulesCore"
